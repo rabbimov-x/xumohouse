@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This XumoHouse project was bootstrapped with [XumoHouse](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
