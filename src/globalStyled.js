@@ -71,6 +71,7 @@ padding: ${({pd})=>pd? pd : "0"} 4%;
 background-color: ${({bg})=>bg? `var(${bg})` : ""};
 `
 export const Col12 = styled.div`    
+
       ${allCommon}
       width: 100%;
       padding: ${({pd})=>pd? pd : "0 var(--mp10)"} ;
