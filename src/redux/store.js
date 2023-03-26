@@ -1,4 +1,4 @@
-import { createStore , applyMiddile } from "redux";
+import { createStore  } from "redux";
 import { rootReduser } from "./rootReducer";
 
 
