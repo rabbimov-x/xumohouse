@@ -1,24 +1,26 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "../pages/HomePage";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Navbar from "../components/Navbar";
+// import HomePage from "../pages/HomePage";
 import { navbar } from "../utils/navbar";
+import { Diva } from "./style";
 
 
 const Root =()=>{
     return(
         <BrowserRouter>
             <Routes>
+                <Route  element = {<Navbar />} >
                 {
                     navbar.map((value)=>{
                         return(
-                            <Route key = {value.id} path = {value.path} element = {value.element} />
+                            <Route key = {value.id()} path = {value.path} element = {value.element} />
                         )
                     })
                 }
-                <Route path = "/home" element = {<h1>Home</h1>} />
-                <Route path = "/properties" element = {<h1>Properties</h1>} />
-                <Route path = "/" element = {<HomePage/>} />
-                <Route path = "*" element = {<h1>404 Not Found</h1>} />
+                </Route>
+                <Route path = "/" element = {<Navigate to = {"/home"}/>} />
+                <Route path = "*" element = {<Diva>404 Not Found</Diva>} />
             </Routes>
         </BrowserRouter>
     )
