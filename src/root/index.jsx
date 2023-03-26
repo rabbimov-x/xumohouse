@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "../components/Navbar";
 // import HomePage from "../pages/HomePage";
 import { navbar } from "../utils/navbar";
-import { Diva } from "./style";
+// import { Diva } from "./style";
 
 
 const Root =()=>{
@@ -20,7 +20,7 @@ const Root =()=>{
                 }
                 </Route>
                 <Route path = "/" element = {<Navigate to = {"/home"}/>} />
-                <Route path = "*" element = {<Diva>404 Not Found</Diva>} />
+                {/* <Route path = "*" element = {<Diva>404 Not Found</Diva>} /> */}
             </Routes>
         </BrowserRouter>
     )
