@@ -1,14 +1,26 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Navbar from "../components/Navbar";
+// import HomePage from "../pages/HomePage";
+import { navbar } from "../utils/navbar";
+// import { Diva } from "./style";
 
 
 const Root =()=>{
     return(
         <BrowserRouter>
             <Routes>
-                <Route path = "/home" element = {<h1>Home</h1>} />
-                <Route path = "/properties" element = {<h1>Properties</h1>} />
-                <Route path = "*" element = {<h1>404 Not Found</h1>} />
+                <Route  element = {<Navbar />} >
+                {
+                    navbar.map((value)=>{
+                        return(
+                            <Route key = {value.id()} path = {value.path} element = {value.element} />
+                        )
+                    })
+                }
+                </Route>
+                <Route path = "https://zesty-melba-24e364.netlify.app/" element = {<Navigate to = {"https://zesty-melba-24e364.netlify.app/home"}/>} />
+                {/* <Route path = "*" element = {<Diva>404 Not Found</Diva>} /> */}
             </Routes>
         </BrowserRouter>
     )

@@ -1,86 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap");
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.cursorp{
+.cursorp {
   cursor: pointer;
 }
+.allContainer {
+  width: 100%;
+}
 
-
-  :root {
-  --shade-0: #0D263B;
-  --shade-1: #FFFFFF;
-  --shade-2: #F6F8F9;
-  --shade-3: #F5F7FC;
+:root {
+  --shade-0: #0d263b;
+  --shade-1: #ffffff;
+  --shade-2: #f6f8f9;
+  --shade-3: #f5f7fc;
   --shade-4: #696969;
-  --shade-5: #2F2D51;
-  --shade-6: #282F34;
-  --primary: #0061DF;
-  --green:  #006766;
-
+  --shade-5: #2f2d51;
+  --shade-6: #282f34;
+  --primary: #0061df;
+  --green: #006766;
+  --yellow: #ffbc01;
+  --yellow1: #ede606;
 
   /* ============  FONT SIZE  =============== */
+  
   --size13: 13px;
   --size16: 16px;
   --size18: 18px;
   --size25: 25px;
   --size30: 30px;
   --size60: 60px;
-  /* =============  ICONS width============== */
-  /* --icon-w18: 18px;
-  --icon-w14: 14px;
-  --icon-w12: 12px;
-  --icon-w20: 20px;
-  --icon-w24: 24px;
-  --icon-w32: 32px;
-  --card-img: 283px;
-   */
-  /* ============= MARGIN vs PADDING PX  ================ */
 
   /* ========== FONT FAMILY ============= */
   /* --family: "Montserrat", sans-serif; */
-  --family: 'Montserrat', sans-serif;
+  --family: "Montserrat", sans-serif;
   /* ============= DISPLAY ================== */
+    /* ===============  btn padding =========== */
+  --btn-middile: 15px 24px 14px 25px;
+    --btn-big: 19px 24px 18px 25px; 
+    --btn-smole:5px 12px;
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
   :root {
-  --size13: 15px;
-  --size15: 18px;
-  --size16: 19px;
-  --size18: 22px;
-  --size23: 25px;
-  --size29: 22px;
-  --size32: 35px;
-  --size40: 50px;
-
-  /* =============  ICONS width============== */
-  --icon-w18: 20px;
-  --icon-w14: 16px;
-  --icon-w12: 14px;
-  --icon-w20: 22px;
-  --icon-w24: 26px;
-  --card-img: 283px;
-  
+    --size13: 12px;
+  --size16: 16px;
+  --size18: 18px;
+  --size25: 22px;
+  --size30: 27px;
+  --size60: 50px;
+    /* =============  ICONS width============== */
+    --icon-w18: 20px;
+    --icon-w14: 16px;
+    --icon-w12: 14px;
+    --icon-w20: 22px;
+    --icon-w24: 26px;
+    --card-img: 283px;
+    /* ===============  btn padding =========== */
+    --btn-middile: 13px 22px 12px 23px;
+    --btn-big: 17px 21px 16px 22px; 
+    --btn-smole:5px 12px;
   }
 }
 
 @media (max-width: 1200px) {
   :root {
-    --size13: 13px;
-  --size15: 15px;
-  --size16: 16px;
-  --size18: 18px;
-  --size23: 23px;
-  --size29: 29px;
-  --size32: 32px;
-  --size40: 38px;
+    --size13: 12px;
+    --size16: 16px;
+    --size18: 18px;
+    --size25: 22px;
+    --size30: 27px;
+    --size60: 50px;
   }
 }
 @media (max-width: 992px) {
@@ -96,11 +94,16 @@ body {
 
     --card-img: 240px;
     /* =============  ICONS width============== */
-  --icon-w18: 17px;
-  --icon-w14: 13px;
-  --icon-w12: 11px;
-  --icon-w20: 18px;
-  --icon-w24: 20px;
+    --icon-w18: 17px;
+    --icon-w14: 13px;
+    --icon-w12: 11px;
+    --icon-w20: 18px;
+    --icon-w24: 20px;
+    
+    /* ===============  btn padding =========== */
+    --btn-middile: 11px 19px 10px 20px;
+    --btn-big: 15px 19px 14px 20px; 
+    --btn-smole:5px 12px;
   }
 }
 @media (max-width: 767px) {
@@ -116,13 +119,12 @@ body {
 
     --card-img: 200px;
     /* =============  ICONS width============== */
-  --icon-w18: 16px;
-  --icon-w14: 12px;
-  --icon-w12: 10px;
-  --icon-w20: 17px;
-  --icon-w24: 20px;
-  --size40: 29px;
-
+    --icon-w18: 16px;
+    --icon-w14: 12px;
+    --icon-w12: 10px;
+    --icon-w20: 17px;
+    --icon-w24: 20px;
+    --size40: 29px;
   }
 }
 
@@ -138,10 +140,10 @@ body {
     --size40: 25px;
 
     /* =============  ICONS width============== */
-  --icon-w18: 14px;
-  --icon-w14: 10px;
-  --icon-w12: 9px;
-  --icon-w20: 15px;
-  --icon-w24: 18px;
+    --icon-w18: 14px;
+    --icon-w14: 10px;
+    --icon-w12: 9px;
+    --icon-w20: 15px;
+    --icon-w24: 18px;
   }
 }
